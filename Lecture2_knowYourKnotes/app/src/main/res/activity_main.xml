@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:gravity="top|center"
+                                             android:orientation="vertical"
+                                             tools:context=".MainActivity">
+
+    <RadioGroup
+            android:id="@+id/knot_group_p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/knote"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.89">
+
+        <RadioButton
+                android:id="@+id/figure8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pickKnote"
+                android:text="Figure8" />
+
+
+        <!--android:checked="true"-->
+        <RadioButton
+                android:id="@+id/butterfly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pickKnote"
+                android:text="Butterfly" />
+
+        <RadioButton
+                android:id="@+id/fisherman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pickKnote"
+                android:text="Fisherman" />
+
+        <RadioButton
+                android:id="@+id/stopper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pickKnote"
+                android:text="Stopper" />
+    </RadioGroup>
+
+    <ImageButton
+            android:id="@+id/knote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/butterfly"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.41000003" />
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:onClick="knoteclick"
+            android:text="See Details"
+            app:layout_constraintBottom_toTopOf="@+id/user_info"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/knote" />
+
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="MAIN CLIMBING KNOTES"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="32dp"
+            android:text="User Info"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Olympics Quiz</string>
+    <string name="butt_true">True</string>
+    <string name="butt_false">false</string>
+    <string name="butt_next">Next question</string>
+    <string name="q1">2020 Olympic Games will take place in Seattle.</string>
+    <string name="q2">First modern Olympic games were held in 1796.</string>
+    <string name="q3">In the 2020 Olympics, there will 48 sports disciplines.</string>
+    <string name="q4">The Olympic flag consists of 5 colors.</string>
+    <string name="q5">Women were allowed to participate in the Olympic games for the first
+        time in 1900.</string>
+    <string name="q6">Skateboarding is an Olympic sport.</string>
+    <string name="q7">Gold medals are made of 50% gold.</string>
+    <string name="q8">Michael Phelps is the most decorated Olympic athlete.</string>
+    <string name="q9">Men and women do not compete against each other in any sport.</string>
+    <string name="q10">Swimming with obstacles was an Olympic discipline in one Game</string>
+</resources>

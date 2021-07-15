@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--The LinearLayout is the root element of the layout hierarchy, and thus
+it must specify the Android Resource XML namespace at http://schemas.android.com/apk/res/android-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/myLayout"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical" >
+
+    <TextView
+            android:id="@+id/questionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:background="#651C75"
+            android:gravity="center"
+            android:padding="24dp"
+            android:text="Olimpic Games this year are in Seattle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FBFBFB"
+            android:textSize="18sp" />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:text="@string/butt_false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/butt_false" android:padding="10dp"
+                android:onClick="check_false"
+                android:textSize="12sp"
+
+        />
+        <Button
+                android:text="@string/butt_true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/butt_true" android:padding="10dp"
+                android:onClick="check_true"
+                android:textSize="12sp"
+        />
+    </LinearLayout>
+    <Button
+            android:text="@string/butt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/button_update" android:padding="10dp"
+            android:onClick="updateQuestion"
+            android:textSize="12sp"/>
+</LinearLayout>

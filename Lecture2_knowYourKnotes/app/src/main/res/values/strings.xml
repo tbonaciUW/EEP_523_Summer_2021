@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">myKnotes</string>
+    <string name="initial_info">Click see details to add your notes here</string>
+</resources>

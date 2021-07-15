@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--The LinearLayout is the root element of the layout hierarchy, and thus
+it must specify the Android Resource XML namespace at http://schemas.android.com/apk/res/android-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PicureTopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/previewPane"
+        android:layout_width="409dp"
+        android:layout_height="653dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"></ImageView>
+
+
+    <Button
+        android:id="@+id/pictureBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="startCameraIntentForResult"
+        android:text="Take photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/choseBut"
+        app:layout_constraintTop_toTopOf="@+id/choseBut" />
+
+    <Button
+        android:id="@+id/choseBut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="startChooseImageIntentForResult"
+        android:text="Select photo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pictureBut"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

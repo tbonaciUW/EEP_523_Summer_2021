@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/write_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="47dp"
+        android:onClick="write_file_internal"
+        android:text="Write"
+        app:layout_constraintBottom_toTopOf="@+id/text_show"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_text" />
+
+    <Button
+        android:id="@+id/read_butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="read_file_internal"
+        android:text="Read First Line"
+        app:layout_constraintBottom_toTopOf="@+id/user_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="216dp"
+        android:text="................."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/write_butt"
+        app:layout_constraintTop_toBottomOf="@+id/write_butt" />
+
+    <EditText
+        android:id="@+id/user_text"
+        android:layout_width="23dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="type text"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/write_butt"
+        app:layout_constraintEnd_toEndOf="@+id/write_butt"
+        app:layout_constraintStart_toStartOf="@+id/write_butt"
+        app:layout_constraintTop_toBottomOf="@+id/read_butt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pictionary</string>
+    <string name="w1">house</string>
+    <string name="h1">hint: object</string>
+    <string name="w2">fly</string>
+    <string name="h2">hint: Action</string>
+    <string name="w3">dog</string>
+    <string name="h3">hint: animal</string>
+</resources>

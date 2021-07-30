@@ -10,8 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".KnotesDetails">
         </activity>
+
         <activity android:name=".MainActivity"
             tools:ignore="MissingClass">
             <intent-filter>

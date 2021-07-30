@@ -13,6 +13,7 @@ import kotlin.properties.Delegates
 
 
 const val KEY_MAIN = "KNOTE_SELECTED"
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
     
     private var mKnoteID:Int = R.drawable.figure8
@@ -22,7 +23,6 @@ class MainActivity : AppCompatActivity() {
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_main)
         
         val user_info = findViewById<TextView>(R.id.user_info)

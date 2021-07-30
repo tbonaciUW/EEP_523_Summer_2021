@@ -1,0 +1,21 @@
+platform :ios, '10.0'
+use_frameworks!
+
+project 'EntityExtractionExample.xcodeproj'
+
+pod 'GoogleMLKit/EntityExtraction'
+
+target 'EntityExtractionExample' do
+  target 'EntityExtractionExampleTests' do
+    inherit! :search_paths
+  end
+end
+
+target 'EntityExtractionExampleObjC' do
+  target 'EntityExtractionExampleObjCTests' do
+    inherit! :search_paths
+  end
+end
+
+target 'EntityExtractionExampleUITests' do
+end

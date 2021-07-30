@@ -1,0 +1,2 @@
+rootProject.name='SensorRTplot'
+include ':app'
